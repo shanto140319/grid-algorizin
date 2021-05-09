@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import Application from '../components/Application';
 import Graduates from '../components/Graduates';
-
 import Hero from '../components/Hero';
-
 import Success from '../components/Success';
 import Trainee from '../components/Trainee';
 

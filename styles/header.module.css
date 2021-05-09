@@ -1,10 +1,11 @@
 .head {
   background-color: var(--clr-primary-1);
-  height: 45px;
+  min-height: 45px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #fff;
   font-size: 18px;
+  padding: 0.5rem 1rem;
 }

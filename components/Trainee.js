@@ -78,13 +78,13 @@ const Wrapper = styled.section`
     align-items: center;
     gap: 0.8rem;
     row-gap: 1rem;
-    @media (min-width: 500px) {
+    @media (min-width: 480px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: 650px) {
+    @media (min-width: 750px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
-    @media (min-width: 950px) {
+    @media (min-width: 970px) {
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
     @media (min-width: 1190px) {
