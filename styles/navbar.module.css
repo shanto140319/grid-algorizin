@@ -1,0 +1,23 @@
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.logo h3 {
+  color: var(--clr-primary-1);
+  margin: 0;
+}
+.navItem ul {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.navItem ul li a {
+  margin: 0;
+  text-transform: capitalize;
+  color: #5e259e;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: var(--spacing);
+}
