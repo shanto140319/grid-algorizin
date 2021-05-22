@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import style from '../styles/navbar.module.css';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -10,7 +10,9 @@ const Navbar = () => {
     <section className='section'>
       <nav className={style.nav}>
         <div className={style.logo}>
-          <h3>Algorizin</h3>
+          <a href='/'>
+            <h3>Algorizin</h3>
+          </a>
           <div className={style.bar} onClick={() => setShowNav(true)}>
             <FaBars />
           </div>
@@ -22,25 +24,23 @@ const Navbar = () => {
             <div className={style.close} onClick={() => setShowNav(!showNav)}>
               <AiOutlineClose />
             </div>
-            <li>
+            <li onClick={() => setShowNav(false)}>
               <Link href='/'>Home</Link>
             </li>
-            <li>
+            <li onClick={() => setShowNav(false)}>
               <Link href='/about'>about</Link>
             </li>
-            <li>
+            <li onClick={() => setShowNav(false)}>
               <Link href='/program'>Program</Link>
             </li>
-            <li>
+            <li onClick={() => setShowNav(false)}>
               <Link href='/projects'>Projects</Link>
             </li>
-            <li>
-              <Link href='/contact'>contact</Link>
+
+            <li onClick={() => setShowNav(false)}>
+              <Link href='/hireGrad'>hire a grad</Link>
             </li>
-            <li>
-              <Link href='/blog'>blog</Link>
-            </li>
-            <li>
+            <li onClick={() => setShowNav(false)}>
               <button className='btn'>apply now</button>
             </li>
           </ul>

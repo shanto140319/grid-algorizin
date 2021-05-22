@@ -67,6 +67,7 @@ const Wrapper = styled.footer`
     align-items: center;
     gap: 1.5rem;
     color: #7d8694;
+    margin-bottom: 0;
     li {
       cursor: pointer;
     }

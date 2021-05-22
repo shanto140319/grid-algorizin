@@ -1,3 +1,7 @@
+.bg {
+  background-color: #f1f7fb;
+  padding: 2rem 0;
+}
 .hero {
   display: grid;
   align-items: flex-start;

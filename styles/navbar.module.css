@@ -25,6 +25,10 @@
   font-size: 18px;
   font-weight: 500;
   letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.navItem ul li a:hover {
+  color: aqua;
 }
 .close {
   display: none;
