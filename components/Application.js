@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { FaChevronCircleDown } from 'react-icons/fa';
+import { RiCheckboxFill } from 'react-icons/ri';
 import { AiFillMessage } from 'react-icons/ai';
 import { AiFillLike } from 'react-icons/ai';
 import { FaHandshake } from 'react-icons/fa';
@@ -16,7 +16,7 @@ const Application = () => {
           <div className='process'>
             <h3>
               <span>
-                <FaChevronCircleDown />
+                <RiCheckboxFill />
               </span>
               Apply
             </h3>
@@ -61,10 +61,10 @@ const Application = () => {
         <div className='center'>
           <h2>Launch your Career in the US!</h2>
           <button className='btn'>apply now</button>
-          <p>
+          <h4>
             Still thinking?{' '}
             <Link href=''>Schedule a meeting with the experts.</Link>
-          </p>
+          </h4>
         </div>
       </section>
     </Wrapper>
@@ -73,7 +73,10 @@ const Application = () => {
 const Wrapper = styled.div`
   background-color: #ffeff9;
   padding: 2rem 0;
-
+  p {
+    font-family: verdana;
+    margin-bottom: 5rem;
+  }
   .processes {
     display: grid;
     gap: 2rem;
@@ -90,6 +93,7 @@ const Wrapper = styled.div`
     }
   }
   .process {
+    max-width: 220px;
     h3 {
       display: flex;
       align-items: center;
@@ -97,14 +101,17 @@ const Wrapper = styled.div`
       svg {
         height: 25px;
         width: 25px;
+
         color: var(--clr-yellow);
       }
     }
 
     p {
       padding-left: 2.5rem;
+      color: darkslategray;
       font-size: 18px;
-      letter-spacing: var(--spacing);
+      font-family: verdana;
+      line-height: 30px;
     }
   }
 
@@ -112,6 +119,16 @@ const Wrapper = styled.div`
     text-align: center;
     button {
       margin: 2rem 0;
+    }
+    h4 {
+      letter-spacing: 0px;
+    }
+    a {
+      color: #4d39e9;
+      transition: var(--transition);
+    }
+    a:hover {
+      color: #6041b0;
     }
   }
 `;

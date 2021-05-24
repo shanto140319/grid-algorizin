@@ -1,17 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import style from '../styles/navbar.module.css';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineDown } from 'react-icons/ai';
 import Link from 'next/link';
 
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
+  const [sticky, setSticky] = useState(false);
+
+  if (typeof window !== 'undefined') {
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    function myFunction() {
+      if (window.pageYOffset >= 80) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    }
+  }
   return (
     <section className='section'>
-      <nav className={style.nav}>
+      <nav className={!sticky ? style.nav : `${style.nav} ${style.sticky}`}>
         <div className={style.logo}>
           <a href='/'>
-            <h3>Algorizin</h3>
+            <img
+              src='https://www.algorizin.com/wp-content/uploads/2020/07/Logo-180.png'
+              alt=''
+            />
           </a>
           <div className={style.bar} onClick={() => setShowNav(true)}>
             <FaBars />
@@ -24,8 +43,23 @@ const Navbar = () => {
             <div className={style.close} onClick={() => setShowNav(!showNav)}>
               <AiOutlineClose />
             </div>
-            <li onClick={() => setShowNav(false)}>
-              <Link href='/'>Home</Link>
+            <li className={style.dropdown} onClick={() => setShowNav(false)}>
+              <Link href='/'>our program</Link>
+              <span>
+                <AiOutlineDown />
+              </span>
+
+              <ul className={style.submenu}>
+                <li onClick={() => setShowNav(false)}>
+                  <Link href='/about'>curriculum</Link>
+                </li>
+                <li onClick={() => setShowNav(false)}>
+                  <Link href='/about'>carrier</Link>
+                </li>
+                <li onClick={() => setShowNav(false)}>
+                  <Link href='/about'>tution</Link>
+                </li>
+              </ul>
             </li>
             <li onClick={() => setShowNav(false)}>
               <Link href='/about'>about</Link>

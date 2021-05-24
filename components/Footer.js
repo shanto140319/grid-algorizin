@@ -53,11 +53,15 @@ const Wrapper = styled.footer`
   padding: 1rem;
   text-align: center;
   height: 200px;
-  background-color: #1b2032;
+
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  background-color: #1b2032;
+
   p {
     color: #fff;
   }

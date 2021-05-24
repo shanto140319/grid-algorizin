@@ -33,8 +33,7 @@ const Success = () => {
               <span>
                 <h3>Learn</h3>
                 <p>
-                  Learn With our live coding classes, learn how to solve
-                  problems, and{' '}
+                  With our live coding classes, learn how to solve problems, and{' '}
                   <Link href=''>become a full-stack developer!</Link>
                 </p>
               </span>
@@ -60,8 +59,9 @@ const Success = () => {
               <span>
                 <h3>earn</h3>
                 <p>
-                  Have your portfolio reviewed, get launched into the market and
-                  kick start your tech career in the US!
+                  <Link href=''> Have your portfolio reviewed</Link>, get
+                  launched into the market and kick start your tech career in
+                  the US!
                 </p>
               </span>
             </div>

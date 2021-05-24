@@ -1,6 +1,6 @@
 .bg {
-  margin-top: 3rem;
-  padding-top: 4rem;
+  margin-top: 0rem;
+  padding-top: 6rem;
   position: relative;
   overflow: hidden;
 }
@@ -13,8 +13,8 @@
   height: 100%;
   width: 100%;
   z-index: -1;
-  border-radius: 40% 50% 0 0;
-  transform: scaleX(1.5);
+  border-radius: 50% 50% 0 0/100% 100% 0 0;
+  transform: scaleX(2);
 }
 
 .flex {
@@ -30,11 +30,17 @@
 .left img {
   width: 100%;
 }
+.left p {
+  font-size: 22px;
+  line-height: 1.6em;
+  letter-spacing: -1px;
+}
 
 .single {
   display: flex;
   align-items: center;
-  gap: 3rem;
+  gap: 2.5rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 600px) {
   .single {
@@ -44,8 +50,20 @@
     margin: 1rem 0;
   }
 }
+.single h3 {
+  text-transform: capitalize;
+}
 .single p {
   font-size: 20px;
+  line-height: 1.6em;
+  letter-spacing: -1px;
+}
+.single a {
+  color: #4d39e9;
+  transition: var(--transition);
+}
+.single a:hover {
+  color: #6041b0;
 }
 
 .icon svg {

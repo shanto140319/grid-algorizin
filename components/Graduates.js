@@ -52,13 +52,13 @@ const Graduates = () => {
         </p>
 
         <div className={style.carousel}>
-          <Carousel breakPoints={breakPoints}>
+          <Carousel breakPoints={breakPoints} enableAutoPlay>
             {data.map((item, index) => {
               return (
                 <div key={index} className={style.carouselItem}>
                   <img src={item.image} alt='' />
                   <p className={style.desc}>{`" ${item.desc}"`}</p>
-                  <h5>{item.name}</h5>
+                  <h4 className={style.name}>{item.name}</h4>
                   <p>{item.title}</p>
                 </div>
               );
@@ -66,7 +66,7 @@ const Graduates = () => {
           </Carousel>
         </div>
 
-        <h2>Jumpstart your career with us!</h2>
+        <h2 className={style.h2}>Jumpstart your career with us!</h2>
         <button className='btn'>apply now</button>
       </section>
     </div>

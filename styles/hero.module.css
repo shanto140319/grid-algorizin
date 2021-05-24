@@ -1,6 +1,6 @@
 .bg {
-  background-color: #f1f7fb;
-  padding: 2rem 0;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 .hero {
   display: grid;
@@ -13,23 +13,36 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+.content {
+  position: relative;
+
+  transition: 1s;
+}
 .content h3 {
   line-height: 35px;
+  letter-spacing: -1px;
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
 }
 .pay {
   margin-top: 1.5rem;
 }
-.desc p {
+
+.desc ul {
+  line-height: 35px;
+}
+.desc ul li {
   font-size: 20px;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-
   color: #5c6770;
+  margin-bottom: 1rem;
 }
-.desc p svg {
-  font-size: 30px;
-  margin-top: 1px;
+.desc ul li svg {
+  font-size: 25px;
+  margin-top: 5px;
   color: var(--clr-yellow);
 }
 .image img {

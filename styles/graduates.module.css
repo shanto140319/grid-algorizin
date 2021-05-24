@@ -1,7 +1,7 @@
 .bg {
   text-align: center;
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
   position: relative;
   padding-top: 3rem;
   overflow: hidden;
@@ -35,4 +35,18 @@
 }
 .desc {
   font-style: italic;
+  color: #333333;
+  font-size: 16px;
+  line-height: 26px;
+  text-transform: none;
+}
+.name {
+  color: #333333;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  letter-spacing: 0;
+}
+.h2 {
+  margin-bottom: 3rem;
 }
