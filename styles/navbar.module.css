@@ -11,10 +11,15 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 80px;
+  height: 100px;
   z-index: 1;
   width: 100%;
   box-shadow: rgb(0 0 0 / 12%) 0 1px 3px;
+}
+@media (max-width: 1080px) {
+  .sticky {
+    height: 80px;
+  }
 }
 
 .bar {
