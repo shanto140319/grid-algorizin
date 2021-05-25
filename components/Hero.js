@@ -37,10 +37,7 @@ const Hero = () => {
             <h3 className={style.pay}>Pay only after you are hired!</h3>
           </div>
           <div className={style.image}>
-            <img
-              src='https://algorizin.com/wp-content/uploads/2020/07/Target-resized.png'
-              alt=''
-            />
+            <img src='images/Target-resized.webp' alt='' />
           </div>
         </div>
       </section>

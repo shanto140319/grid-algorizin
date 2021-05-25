@@ -4,7 +4,7 @@ import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { AiOutlineDown } from 'react-icons/ai';
 import Link from 'next/link';
-// import logo from '../public/images/logo.png';
+
 const Navbar = () => {
   const [showNav, setShowNav] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -28,10 +28,7 @@ const Navbar = () => {
         <nav className={style.nav}>
           <div className={style.logo}>
             <a href='/'>
-              <img
-                src='https://algorizin.com/wp-content/uploads/2021/05/cropped-Logo_Final-180x41.png'
-                alt='logo'
-              />
+              <img src={'/images/logo.webp'} alt='' />
             </a>
             <div className={style.bar} onClick={() => setShowNav(true)}>
               <FaBars />

@@ -3,31 +3,31 @@ import style from '../styles/graduates.module.css';
 import Carousel from 'react-elastic-carousel';
 const data = [
   {
-    image: 'https://www.algorizin.com/wp-content/uploads/2021/04/2-120x120.png',
+    image: 'images/2-120x120.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sapiente, aut in fugiat quaerat eos id cum! Dolorum inventore quam aspernatur impedit. Temporibus ducimus voluptatum cupiditate illo reprehenderit error rem! ',
     title: 'software development engineer',
     name: 'jahidul haque shanto',
   },
   {
-    image: 'https://www.algorizin.com/wp-content/uploads/2021/04/2-120x120.png',
+    image: 'images/4-120x120.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sapiente, aut in fugiat quaerat eos id cum! Dolorum inventore quam aspernatur impedit. Temporibus ducimus voluptatum cupiditate illo reprehenderit error rem! ',
     title: 'software development engineer',
     name: 'jahidul haque shanto',
   },
   {
-    image: 'https://www.algorizin.com/wp-content/uploads/2021/04/2-120x120.png',
+    image: 'images/2-120x120.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sapiente, aut in fugiat quaerat eos id cum! Dolorum inventore quam aspernatur impedit. Temporibus ducimus voluptatum cupiditate illo reprehenderit error rem! ',
     title: 'software development engineer',
     name: 'jahidul haque shanto',
   },
   {
-    image: 'https://www.algorizin.com/wp-content/uploads/2021/04/4-120x120.png',
+    image: 'images/4-120x120.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sapiente, aut in fugiat quaerat eos id cum! Dolorum inventore quam aspernatur impedit. Temporibus ducimus voluptatum cupiditate illo reprehenderit error rem! ',
     title: 'software development engineer',
     name: 'jahidul haque shanto',
   },
   {
-    image: 'https://www.algorizin.com/wp-content/uploads/2021/04/2-120x120.png',
+    image: 'images/2-120x120.png',
     desc: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet sapiente, aut in fugiat quaerat eos id cum! Dolorum inventore quam aspernatur impedit. Temporibus ducimus voluptatum cupiditate illo reprehenderit error rem! ',
     title: 'software development engineer',
     name: 'jahidul haque shanto',

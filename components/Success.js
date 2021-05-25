@@ -20,10 +20,7 @@ const Success = () => {
               dreams. And the best part is, our mentors are all immigrants like
               you!
             </p>
-            <img
-              src='https://www.algorizin.com/wp-content/uploads/2020/07/bulb-resized-600x338.png'
-              alt=''
-            />
+            <img src='images/bulb-resized-600x338.webp' alt='' />
           </div>
           <div className='right'>
             <div className={style.single}>

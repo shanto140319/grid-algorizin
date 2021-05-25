@@ -3,44 +3,34 @@ import React from 'react';
 import styled from 'styled-components';
 const data = [
   {
-    image:
-      'https://www.algorizin.com/wp-content/uploads/2021/03/Sajid-2-200x200.jpg',
+    image: 'images/Sajid-2-200x200.webp',
     name: 'Sajid Sharlemin',
     company: 'Microsoft',
-    logo:
-      'https://www.algorizin.com/wp-content/uploads/2020/07/Microsoft-Logo.png',
+    logo: 'images/Microsoft-Logo-1.webp',
   },
   {
-    image:
-      'https://www.algorizin.com/wp-content/uploads/2021/03/Sajid-2-200x200.jpg',
+    image: 'images/Anna-Piasek-300x300.webp',
     name: 'Sajid Sharlemin',
     company: 'Microsoft',
-    logo:
-      'https://www.algorizin.com/wp-content/uploads/2020/07/Microsoft-Logo.png',
+    logo: 'images/Microsoft-Logo-1.webp',
   },
   {
-    image:
-      'https://www.algorizin.com/wp-content/uploads/2021/03/Sajid-2-200x200.jpg',
+    image: 'images/Samyo-300x300.png',
     name: 'Sajid Sharlemin',
     company: 'Microsoft',
-    logo:
-      'https://www.algorizin.com/wp-content/uploads/2020/07/Microsoft-Logo.png',
+    logo: 'images/Microsoft-Logo-1.webp',
   },
   {
-    image:
-      'https://www.algorizin.com/wp-content/uploads/2021/03/Sajid-2-200x200.jpg',
+    image: 'images/Jushita-300x300.png',
     name: 'Sajid Sharlemin',
     company: 'Microsoft',
-    logo:
-      'https://www.algorizin.com/wp-content/uploads/2020/07/Microsoft-Logo.png',
+    logo: 'images/Microsoft-Logo-1.webp',
   },
   {
-    image:
-      'https://www.algorizin.com/wp-content/uploads/2021/03/Sajid-2-200x200.jpg',
+    image: 'images/mentorSalman-300x300.webp',
     name: 'Sajid Sharlemin',
     company: 'Microsoft',
-    logo:
-      'https://www.algorizin.com/wp-content/uploads/2020/07/Microsoft-Logo.png',
+    logo: 'images/Microsoft-Logo-1.webp',
   },
 ];
 const Trainee = () => {
