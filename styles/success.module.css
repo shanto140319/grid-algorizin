@@ -16,6 +16,14 @@
   border-radius: 50% 50% 0 0/100% 100% 0 0;
   transform: scaleX(2);
 }
+@media (max-width: 1090px) {
+  .bg {
+    padding-top: 2rem;
+  }
+  .bg::before {
+    border-radius: 0;
+  }
+}
 
 .flex {
   display: grid;

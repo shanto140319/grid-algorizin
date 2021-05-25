@@ -23,64 +23,68 @@ const Navbar = () => {
     }
   }
   return (
-    <section className='section'>
-      <nav className={!sticky ? style.nav : `${style.nav} ${style.sticky}`}>
-        <div className={style.logo}>
-          <a href='/'>
-            <img
-              src='https://algorizin.com/wp-content/uploads/2021/05/cropped-Logo_Final-180x41.png'
-              alt='logo'
-            />
-          </a>
-          <div className={style.bar} onClick={() => setShowNav(true)}>
-            <FaBars />
-          </div>
-        </div>
-        <div
-          className={showNav ? `${style.navItem} ${style.show}` : style.navItem}
-        >
-          <ul>
-            <div className={style.close} onClick={() => setShowNav(!showNav)}>
-              <AiOutlineClose />
+    <div className={!sticky ? style.navbar : `${style.navbar} ${style.sticky}`}>
+      <section className='section'>
+        <nav className={style.nav}>
+          <div className={style.logo}>
+            <a href='/'>
+              <img
+                src='https://algorizin.com/wp-content/uploads/2021/05/cropped-Logo_Final-180x41.png'
+                alt='logo'
+              />
+            </a>
+            <div className={style.bar} onClick={() => setShowNav(true)}>
+              <FaBars />
             </div>
-            <li className={style.dropdown} onClick={() => setShowNav(false)}>
-              <Link href='/'>our program</Link>
-              <span>
-                <AiOutlineDown />
-              </span>
+          </div>
+          <div
+            className={
+              showNav ? `${style.navItem} ${style.show}` : style.navItem
+            }
+          >
+            <ul>
+              <div className={style.close} onClick={() => setShowNav(!showNav)}>
+                <AiOutlineClose />
+              </div>
+              <li className={style.dropdown} onClick={() => setShowNav(false)}>
+                <Link href='/'>our program</Link>
+                <span>
+                  <AiOutlineDown />
+                </span>
 
-              <ul className={style.submenu}>
-                <li onClick={() => setShowNav(false)}>
-                  <Link href='/about'>curriculum</Link>
-                </li>
-                <li onClick={() => setShowNav(false)}>
-                  <Link href='/about'>carrier</Link>
-                </li>
-                <li onClick={() => setShowNav(false)}>
-                  <Link href='/about'>tution</Link>
-                </li>
-              </ul>
-            </li>
-            <li onClick={() => setShowNav(false)}>
-              <Link href='/about'>about</Link>
-            </li>
-            <li onClick={() => setShowNav(false)}>
-              <Link href='/program'>Program</Link>
-            </li>
-            <li onClick={() => setShowNav(false)}>
-              <Link href='/projects'>Projects</Link>
-            </li>
+                <ul className={style.submenu}>
+                  <li onClick={() => setShowNav(false)}>
+                    <Link href='/about'>curriculum</Link>
+                  </li>
+                  <li onClick={() => setShowNav(false)}>
+                    <Link href='/about'>carrier</Link>
+                  </li>
+                  <li onClick={() => setShowNav(false)}>
+                    <Link href='/about'>tution</Link>
+                  </li>
+                </ul>
+              </li>
+              <li onClick={() => setShowNav(false)}>
+                <Link href='/about'>about</Link>
+              </li>
+              <li onClick={() => setShowNav(false)}>
+                <Link href='/program'>Program</Link>
+              </li>
+              <li onClick={() => setShowNav(false)}>
+                <Link href='/projects'>Projects</Link>
+              </li>
 
-            <li onClick={() => setShowNav(false)}>
-              <Link href='/hireGrad'>hire a grad</Link>
-            </li>
-            <li onClick={() => setShowNav(false)}>
-              <button className='btn'>apply now</button>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </section>
+              <li onClick={() => setShowNav(false)}>
+                <Link href='/hireGrad'>hire a grad</Link>
+              </li>
+              <li onClick={() => setShowNav(false)}>
+                <button className='btn'>apply now</button>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </div>
   );
 };
 
