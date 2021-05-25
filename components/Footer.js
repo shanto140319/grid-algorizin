@@ -59,7 +59,6 @@ const Wrapper = styled.footer`
   justify-content: center;
   flex-direction: column;
   overflow: hidden;
-  position: relative;
   background-color: #1b2032;
 
   p {
@@ -67,6 +66,7 @@ const Wrapper = styled.footer`
   }
 
   .social {
+    width: 100%;
     display: flex;
     align-items: center;
     gap: 1.5rem;
